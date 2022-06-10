@@ -1,0 +1,72 @@
+.BagItem_Container {
+  border-bottom: 2px solid #0000001f;
+  height: 120px;
+  //   margin-bottom: 16px;
+  padding: 12px 0;
+  display: flex;
+  .Image {
+    width: 25%;
+    height: 100%;
+    img {
+      width: 100%;
+      height: 100%;
+    }
+  }
+  .Details {
+    width: 75%;
+    height: 100%;
+    padding: 0px 8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .Top {
+      display: flex;
+      //   align-items: flex-start;
+      justify-content: space-between;
+      p {
+        color: #221f20;
+      }
+      button {
+        padding: 4px;
+        color: #221f20;
+        cursor: pointer;
+        outline: none;
+        border: none;
+        background-color: transparent;
+        font-size: 16px;
+      }
+    }
+    .Bottom {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      .BtnContainer {
+        background-color: #ebebeb;
+        display: flex;
+        align-items: center;
+        border-radius: 32px;
+        button {
+          padding: 8px 12px;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+          font-weight: bold;
+          &:disabled {
+            cursor: not-allowed !important;
+          }
+        }
+
+        p {
+          padding: 4px;
+          font-weight: bold;
+        }
+      }
+      p {
+        font-weight: bold;
+        color: #221f20;
+      }
+    }
+  }
+}

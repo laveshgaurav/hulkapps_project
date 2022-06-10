@@ -1,0 +1,51 @@
+.CardItem_Container {
+  width: 240px;
+  height: 360px;
+  img {
+    width: 100%;
+    height: 65%;
+    margin-bottom: 12px;
+  }
+  .Title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 12px;
+    p {
+      margin: 0;
+      &:nth-child(1) {
+        font-weight: 500;
+      }
+      &:nth-child(2) {
+        font-weight: 600;
+      }
+    }
+  }
+  .Variants {
+    margin-bottom: 12px;
+    display: flex;
+    button {
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: none;
+      outline: none;
+      cursor: pointer;
+      margin-right: 6px;
+    }
+  }
+  .AddToCart {
+    width: 100%;
+    border: 1px solid #1e1e1e;
+    color: #1e1e1e;
+    padding: 8px;
+    font-weight: 500;
+    cursor: pointer;
+    &:disabled {
+      cursor: not-allowed;
+    }
+  }
+}

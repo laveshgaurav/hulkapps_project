@@ -1,0 +1,100 @@
+.Bag_Container {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.4);
+  margin: 0;
+  backdrop-filter: blur(6px);
+  display: flex;
+  justify-content: end;
+  z-index: 1;
+  .Bag {
+    width: 33%;
+    height: 100%;
+    background-color: white;
+    .Items {
+      width: 100%;
+      height: 75%;
+      .Header {
+        border-bottom: 2px solid #221f20;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 10px 24px;
+        height: 15%;
+        h2 {
+          color: #221f20;
+          span {
+            font-size: 16px;
+          }
+        }
+        button {
+          margin-right: 12px;
+          padding: 6px;
+          cursor: pointer;
+          color: #221f20;
+          background-color: transparent;
+          outline: none;
+          border: none;
+          font-size: 18px;
+        }
+      }
+      .Items_Container {
+        height: 85%;
+        padding: 12px;
+        overflow: scroll;
+      }
+    }
+    .Checkout {
+      width: 100%;
+      height: 25%;
+      background-color: #eff5f7;
+      border-top: 2px solid #1e1e1e;
+      padding: 16px 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      .Total {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        h3 {
+          font-weight: 800;
+          color: #221f20;
+          font-size: 20px;
+        }
+      }
+      button {
+        width: 100%;
+        background-color: #1e1e1e;
+        color: white;
+        padding: 10px;
+      }
+      p {
+        color: #221f20;
+        font-size: 14px;
+        text-align: center;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .Bag_Container {
+    .Bag {
+      width: 60%;
+    }
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .Bag_Container {
+    .Bag {
+      width: 80%;
+    }
+  }
+}
